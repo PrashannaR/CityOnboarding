@@ -10,9 +10,9 @@ import Foundation
 
 struct City : Codable, Identifiable{
     let id : String
-    let imageName : String?
-    let title : String?
-    let desc : String?
+    let imageName : String
+    let title : String
+    let desc : String
 }
 
 

@@ -13,7 +13,7 @@ struct CityOnboardingApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnBoarding()
         }
         .modelContainer(for: Item.self)
     }
