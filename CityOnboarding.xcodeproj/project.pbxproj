@@ -19,6 +19,8 @@
 		5D0506092A3557880005E68F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0506082A3557880005E68F /* MapView.swift */; };
 		5D05060C2A3559550005E68F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D05060B2A3559550005E68F /* MapViewModel.swift */; };
 		5D120FDF2A35A10500B5E56F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D120FDE2A35A10500B5E56F /* Color.swift */; };
+		5D120FE22A35A21200B5E56F /* GarbageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D120FE12A35A21200B5E56F /* GarbageView.swift */; };
+		5D120FE42A35A41B00B5E56F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D120FE32A35A41B00B5E56F /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		5D0506082A3557880005E68F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		5D05060B2A3559550005E68F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		5D120FDE2A35A10500B5E56F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		5D120FE12A35A21200B5E56F /* GarbageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarbageView.swift; sourceTree = "<group>"; };
+		5D120FE32A35A41B00B5E56F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		5D0505F62A34F3AD0005E68F /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				5D120FE02A35A1FE00B5E56F /* Components */,
 				5D0505F92A34F3D00005E68F /* ViewModel */,
 				5D0505F82A34F3CA0005E68F /* View */,
 			);
@@ -126,6 +131,7 @@
 		5D0505F92A34F3D00005E68F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5D120FE32A35A41B00B5E56F /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -185,6 +191,14 @@
 				5D120FDE2A35A10500B5E56F /* Color.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		5D120FE02A35A1FE00B5E56F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5D120FE12A35A21200B5E56F /* GarbageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +278,10 @@
 				5D0506052A3529480005E68F /* OnBoardingViewModel.swift in Sources */,
 				5D0506032A34FE8C0005E68F /* City.swift in Sources */,
 				5D0505FE2A34F4550005E68F /* Home.swift in Sources */,
+				5D120FE42A35A41B00B5E56F /* HomeViewModel.swift in Sources */,
 				5D0505E62A34F1DE0005E68F /* CityOnboardingApp.swift in Sources */,
 				5D0506002A34F45F0005E68F /* OnBoarding.swift in Sources */,
+				5D120FE22A35A21200B5E56F /* GarbageView.swift in Sources */,
 				5D05060C2A3559550005E68F /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
