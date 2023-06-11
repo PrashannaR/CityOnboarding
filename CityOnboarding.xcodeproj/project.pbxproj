@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13D79C8B2A359768006526EC /* sampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D79C8A2A359768006526EC /* sampleData.swift */; };
+		13D79C8D2A359973006526EC /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D79C8C2A359973006526EC /* PreviewSampleData.swift */; };
 		5D0505E62A34F1DE0005E68F /* CityOnboardingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0505E52A34F1DE0005E68F /* CityOnboardingApp.swift */; };
 		5D0505E82A34F1DE0005E68F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0505E72A34F1DE0005E68F /* ContentView.swift */; };
 		5D0505EA2A34F1DF0005E68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0505E92A34F1DF0005E68F /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13D79C8A2A359768006526EC /* sampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleData.swift; sourceTree = "<group>"; };
+		13D79C8C2A359973006526EC /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
 		5D0505E22A34F1DE0005E68F /* CityOnboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityOnboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0505E52A34F1DE0005E68F /* CityOnboardingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityOnboardingApp.swift; sourceTree = "<group>"; };
 		5D0505E72A34F1DE0005E68F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13D79C872A35967A006526EC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				13D79C8C2A359973006526EC /* PreviewSampleData.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		5D0505D92A34F1DE0005E68F = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +106,7 @@
 		5D0505F52A34F3A60005E68F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				13D79C872A35967A006526EC /* Support */,
 				5D0506062A3557760005E68F /* Map */,
 				5D0505F72A34F3C10005E68F /* OnBoarding */,
 				5D0505F62A34F3AD0005E68F /* HomeScreen */,
@@ -156,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				5D0506022A34FE8C0005E68F /* City.swift */,
+				13D79C8A2A359768006526EC /* sampleData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,6 +293,8 @@
 				5D0506032A34FE8C0005E68F /* City.swift in Sources */,
 				5D0505FE2A34F4550005E68F /* Home.swift in Sources */,
 				5D120FE42A35A41B00B5E56F /* HomeViewModel.swift in Sources */,
+				13D79C8B2A359768006526EC /* sampleData.swift in Sources */,
+				13D79C8D2A359973006526EC /* PreviewSampleData.swift in Sources */,
 				5D0505E62A34F1DE0005E68F /* CityOnboardingApp.swift in Sources */,
 				5D0506002A34F45F0005E68F /* OnBoarding.swift in Sources */,
 				5D120FE22A35A21200B5E56F /* GarbageView.swift in Sources */,

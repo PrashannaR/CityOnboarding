@@ -1,0 +1,12 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+*.xcodeproj/*.pbxproj
+*.xcodeproj/*.xcworkspace/
+*.xcassets/
+
+# Swift
+.DS_Store
+.build/
