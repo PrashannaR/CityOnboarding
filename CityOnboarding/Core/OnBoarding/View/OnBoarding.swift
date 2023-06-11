@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnBoarding: View {
-    
+    @State private var backsymbolAnimate : Bool = false
     @StateObject private var vm = OnBoardingViewModel()
     @Environment(\.presentationMode) var presentationMode
     
@@ -55,7 +55,9 @@ struct OnBoarding: View {
                 if vm.currentIndex > 0 {
                     ToolbarItem(placement: .topBarLeading) {
                         Image(systemName: "arrowshape.backward.fill")
+                            .symbolEffect(.bounce, options: .default, value: backsymbolAnimate)
                             .onTapGesture {
+                                backsymbolAnimate.toggle()
                                 vm.decreaseIndex()
                             }
                     }
