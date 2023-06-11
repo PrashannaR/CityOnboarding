@@ -15,6 +15,6 @@ struct CityOnboardingApp: App {
         WindowGroup {
             OnBoarding()
         }
-        .modelContainer(for: Item.self)
+        .modelContainer(for: City.self)
     }
 }
