@@ -18,6 +18,7 @@
 		5D0506052A3529480005E68F /* OnBoardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0506042A3529480005E68F /* OnBoardingViewModel.swift */; };
 		5D0506092A3557880005E68F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0506082A3557880005E68F /* MapView.swift */; };
 		5D05060C2A3559550005E68F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D05060B2A3559550005E68F /* MapViewModel.swift */; };
+		5D120FDF2A35A10500B5E56F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D120FDE2A35A10500B5E56F /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5D0506042A3529480005E68F /* OnBoardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewModel.swift; sourceTree = "<group>"; };
 		5D0506082A3557880005E68F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		5D05060B2A3559550005E68F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		5D120FDE2A35A10500B5E56F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		5D0505E42A34F1DE0005E68F /* CityOnboarding */ = {
 			isa = PBXGroup;
 			children = (
+				5D120FDD2A35A0F700B5E56F /* Extension */,
 				5D0506012A34FE800005E68F /* Model */,
 				5D0505F52A34F3A60005E68F /* Core */,
 				5D0505E72A34F1DE0005E68F /* ContentView.swift */,
@@ -176,6 +179,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		5D120FDD2A35A0F700B5E56F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5D120FDE2A35A10500B5E56F /* Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,6 +260,7 @@
 				5D0505E82A34F1DE0005E68F /* ContentView.swift in Sources */,
 				5D0506092A3557880005E68F /* MapView.swift in Sources */,
 				5D0505EF2A34F1DF0005E68F /* Item.swift in Sources */,
+				5D120FDF2A35A10500B5E56F /* Color.swift in Sources */,
 				5D0506052A3529480005E68F /* OnBoardingViewModel.swift in Sources */,
 				5D0506032A34FE8C0005E68F /* City.swift in Sources */,
 				5D0505FE2A34F4550005E68F /* Home.swift in Sources */,
