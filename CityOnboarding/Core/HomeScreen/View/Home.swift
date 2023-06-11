@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Home: View {
     
+    @StateObject private var vm : HomeViewModel = HomeViewModel()
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -34,12 +36,19 @@ extension Home{
     private func ListView() -> some View{
         VStack{
             List{
-                Section("Basic Rules") {
-                    Text("hehe")
+                Section("Garbage Routine") {
+                    GarbageView()
                 }
                 
                 Section("Transportation") {
-                    Text("Transportation")
+                    Text("Make Sure to Download These Apps")
+                    HStack{
+                        ScrollView{
+                            Image(systemName: "xmark.bin.fill")
+                                .resizable().scaledToFit()
+                                .frame(width: 40,height: 40)
+                        }
+                    }
                 }
                 
                 Section("Emergency Contact") {
