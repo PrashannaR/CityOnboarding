@@ -47,7 +47,9 @@ extension Home{
                 }
                 
                 Section("Places to visit") {
-                    Text("Places to Visit")
+                    NavigationLink(destination: MapView()) {
+                        Text("Map")
+                    }
                 }
             }
         }
