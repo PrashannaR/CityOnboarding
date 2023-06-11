@@ -23,8 +23,10 @@ struct OnBoarding: View {
             ZStack {
                 Color.white
                     .ignoresSafeArea()
-
-                if !cities.isEmpty {
+                if UserDefaults.standard.bool(forKey: "hasOnboarded") == true {
+                    Home()
+                }
+                else if !cities.isEmpty {
                     VStack(alignment: .leading) {
                         Image(cities[index].imageName)
                             .resizable()
@@ -66,7 +68,7 @@ struct OnBoarding: View {
                     for city in SampleData.contents {
                         moc.insert(object: city)
                     }
-                    UserDefaults.standard.setValue(true, forKey: "hasOnboarded")
+//                    UserDefaults.standard.setValue(true, forKey: "hasOnboarded")
                 }
                 
             }
