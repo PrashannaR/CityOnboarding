@@ -17,7 +17,7 @@ let previewContainer: ModelContainer = {
         for city in SampleData.contents {
             container.mainContext.insert(object: city)
         }
-        UserDefaults.standard.setValue(true, forKey: "hasOnboarded")
+//        UserDefaults.standard.setValue(true, forKey: "hasOnboarded")
         return container
     } catch {
         fatalError("Failed to create container")

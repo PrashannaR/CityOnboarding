@@ -15,5 +15,5 @@ extension Color{
 struct ColorTheme{
     let darkPurple = Color("darkPurple")
     let lightPurple = Color("lightPurple")
-    let white = Color("white")
+    let white = Color("bgColor")
 }
