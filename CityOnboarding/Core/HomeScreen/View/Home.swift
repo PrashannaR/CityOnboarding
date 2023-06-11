@@ -63,7 +63,7 @@ extension Home{
                         HStack{
                             Spacer()
                             
-                            Link(destination: URL(string: "https://apps.apple.com/in/app/swiggy-food-order-delivery/id989540920")!, label: {
+                            Link(destination: URL(string: "https://www.swiggy.com")!, label: {
                                 Image("swiggy")
                                     .resizable()
                                     .scaledToFit()
@@ -71,7 +71,7 @@ extension Home{
                                 
                             })
                             
-                            Link(destination: URL(string: "https://apps.apple.com/in/app/tummoc-bmtc-ticket-tracking/id1534144729")!
+                            Link(destination: URL(string: "https://tummoc.com")!
                                  , label: {
                                 Image("tummoc")
                                     .resizable()
@@ -80,14 +80,14 @@ extension Home{
                                     .cornerRadius(10)
                             })
                             
-                            Link(destination: URL(string: "https://apps.apple.com/in/app/yulu-top-ebike-sharing-app/id1331504548")!, label: {
+                            Link(destination: URL(string: "https://www.yulu.bike")!, label: {
                                 Image("yulu")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 55, height: 55)
                             })
                             
-                            Link(destination: URL(string: "https://apps.apple.com/in/app/moovit-public-transport-live/id498477945")!, label: {
+                            Link(destination: URL(string: "https://moovitapp.com/bengaluru-3620/poi/en-gb")!, label: {
                                 Image("moovit")
                                     .resizable()
                                     .scaledToFit()
@@ -103,22 +103,30 @@ extension Home{
                 }
                 
                 Section("Emergency Contact") {
-                    dialPhone(phoneNumber: phoneNumber1)
+                    HStack {
+                        Spacer()
+                        VStack {
+                            dialPhone(phoneNumber: phoneNumber1, image: "police")
+                        }
+                        dialPhone(phoneNumber: phoneNumber2, image: "ambulance")
+                        Spacer()
+                    }
                 }
                 
                 Section("Places to visit") {
                     NavigationLink(destination: MapView()) {
-                        Text("Map")
+                        Text("Explore Bangalore!")
+                            .font(.headline)
                     }
                 }
             }
         }
     }
     
-    private func dialPhone(phoneNumber : String) -> some View{
-        HStack {
-            Spacer()
-            Image("police")
+    private func dialPhone(phoneNumber : String, image: String) -> some View{
+        VStack {
+            
+            Image(image)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 69, height: 69)
@@ -127,19 +135,7 @@ extension Home{
                     UIApplication.shared.open(url)
                 }
                 .padding(.trailing)
-            
-            Image("ambulance")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 69, height: 69)
-                .onTapGesture {
-                    guard let url = URL(string: "tel:\(phoneNumber)") else { return }
-                    UIApplication.shared.open(url)
-                }
-            
-            Spacer()
-
-            
+                        
 
         }
     }

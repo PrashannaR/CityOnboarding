@@ -98,6 +98,9 @@ extension OnBoarding {
             Text(title)
                 .font(.title)
                 .fontWeight(.bold)
+                .padding(.bottom,16)
+            
+            
 
             Text(desc)
                 .font(.headline)
