@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct OnBoarding: View {
+    
     @StateObject private var vm = OnBoardingViewModel()
-
+    @Environment(\.presentationMode) var presentationMode
+    
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -25,8 +28,27 @@ struct OnBoarding: View {
 
                     Spacer()
 
-                    Button()
+                    if vm.currentIndex == 2{
+                        NavigationLink(destination: Home()) {
+                            RoundedRectangle(cornerRadius: 15)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 75)
+                                .padding()
+                                .overlay(alignment: .center) {
+                                    Text("Finish")
+                                        .font(.title2)
+                                        .fontWeight(.bold)
+                                        .foregroundStyle(Color.white)
+                                }
+                        }
+                    }else{
+                        Button()
+                    }
                 }
+            }
+            .navigationBarBackButtonHidden()
+            .onAppear{
+                presentationMode.wrappedValue.dismiss()
             }
             .toolbar {
                 if vm.currentIndex > 0 {
@@ -43,7 +65,9 @@ struct OnBoarding: View {
 }
 
 #Preview {
-    OnBoarding()
+    NavigationStack {
+        OnBoarding()
+    }
 }
 
 extension OnBoarding {
@@ -64,6 +88,7 @@ extension OnBoarding {
         VStack {
             SwiftUI.Button(action: {
                 vm.increaseIndex()
+                
             }, label: {
                 RoundedRectangle(cornerRadius: 15)
                     .frame(maxWidth: .infinity)
