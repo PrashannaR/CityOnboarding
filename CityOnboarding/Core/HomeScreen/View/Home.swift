@@ -8,11 +8,48 @@
 import SwiftUI
 
 struct Home: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ZStack {
+                Color.white.ignoresSafeArea()
+                
+                VStack{
+                    ListView()
+
+                }.navigationBarBackButtonHidden()
+            }
+
+        }
     }
 }
 
 #Preview {
-    Home()
+    NavigationStack {
+        Home()
+    }
+}
+
+extension Home{
+    private func ListView() -> some View{
+        VStack{
+            List{
+                Section("Basic Rules") {
+                    Text("hehe")
+                }
+                
+                Section("Transportation") {
+                    Text("Transportation")
+                }
+                
+                Section("Emergency Contact") {
+                    Text("Emergency Contact")
+                }
+                
+                Section("Places to visit") {
+                    Text("Places to Visit")
+                }
+            }
+        }
+    }
 }
