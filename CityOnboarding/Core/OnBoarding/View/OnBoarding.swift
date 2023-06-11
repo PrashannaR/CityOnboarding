@@ -28,7 +28,7 @@ struct OnBoarding: View {
 
                     Spacer()
 
-                    if vm.currentIndex == 2{
+                    if vm.currentIndex == vm.cities.count - 1 {
                         NavigationLink(destination: Home()) {
                             RoundedRectangle(cornerRadius: 15)
                                 .frame(maxWidth: .infinity)
@@ -41,6 +41,7 @@ struct OnBoarding: View {
                                         .foregroundStyle(Color.white)
                                 }
                         }
+                        
                     }else{
                         Button()
                     }
